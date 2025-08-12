@@ -1,22 +1,20 @@
 ### Chapter 2, Visualize: Cabling Lab
 
-**Objective:** To visually demonstrate the correct and incorrect cabling types for connecting "like devices" (switch to switch).
-
-**Lab Setup:** I placed two 2960 switches in a Packet Tracer workspace to test the connections.
+**Objective:** To visually demonstrate the correct cabling types for connecting 'unlike devices' (PC to Switch) and 'like devices' (PC to PC).
 
 ---
-#### 1. Incorrect Cabling: Straight-Through Cable
+#### 1. Correct Cabling Connections
 
-When connecting the two switches with a **straight-through** cable, the link lights on the ports remained red. This indicates an invalid connection and that no link was established between the devices.
+As shown in the screenshot, a **straight-through** cable correctly connects 'unlike devices' (PC1 to SW1), resulting in green link lights. Similarly, a **crossover** cable correctly connects 'like devices' (PC2 to PC3), also resulting in a valid link.
 
-![Screenshot of two switches connected with a straight-through cable showing red lights](wrong_cabling.png)
-
----
-#### 2. Correct Cabling: Crossover Cable
-
-After replacing the cable with a **crossover** cable, the link lights turned green after a few seconds. This indicates a valid link was established, and the switches can now communicate.
-
-![Screenshot of two switches connected with a crossover cable showing green lights](correct_cabling.png)
+![Screenshot of correct cabling connections](correct_cabling.png)
 
 ---
-**Conclusion:** This lab confirms the fundamental cabling rule: **"like devices"** (e.g., switch to switch) require a **crossover cable** to communicate correctly.
+#### 2. Incorrect Cabling Connections
+
+Conversely, using the wrong cable types results in a down link, indicated by red lights. The screenshot shows a failed connection when using a **crossover** cable for 'unlike devices' (PC1 to SW1) and a failed connection when using a **straight-through** cable for 'like devices' (PC2 to PC3).
+
+![Screenshot of incorrect cabling connections](wrong_cabling.png)
+
+---
+**Conclusion:** This lab confirms the fundamental cabling rules: use **straight-through** cables for unlike devices and **crossover** cables for like devices.
