@@ -30,3 +30,15 @@ For data to travel across a physical medium, several key principles are at play.
 * **Total Internal Reflection:** This is the physics principle that makes fiber-optic communication possible. Light pulses sent down a glass "core" are continuously reflected off the surrounding "cladding," which traps the light inside the cable and allows it to travel for very long distances with minimal signal loss.
 
 * **Line Encoding:** This is the set of rules used to convert a computer's abstract digital bits (1s and 0s) into physical signals—such as specific voltage levels on a copper wire or pulses of light in a fiber-optic cable—that can be transmitted over the medium.
+
+---
+
+### Link Operation
+
+Link operation defines how two directly connected devices communicate.
+
+* **Duplex Modes:** This determines the direction of data flow.
+    * **Half-Duplex:** Data can only be sent in one direction at a time. This is an older standard used by devices like hubs.
+    * **Full-Duplex:** Data can be sent and received simultaneously. This is the modern standard for switches and doubles the potential throughput of the link.
+
+* **Autonegotiation:** This is an essential process where two connected devices automatically exchange information about their capabilities and agree on the best possible settings to use. They negotiate parameters like the highest common **speed** (e.g., 1 Gbps, 100 Mbps) and **duplex mode** (full or half) that both ends support.
